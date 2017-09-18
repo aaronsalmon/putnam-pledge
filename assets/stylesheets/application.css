@@ -1,0 +1,120 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, serif;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+  color: #49274A;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+a {
+  color: #94618E;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  padding: 0.25em;
+  background-color: #F8EEE7;
+  white-space: nowrap;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 1200px;
+}
+
+/* Navigation */
+nav {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+  nav .vapid {
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #49274A;
+    text-transform: uppercase;
+  }
+
+  nav ul {
+    float: right;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.3em;
+  }
+
+  nav li {
+    float: left;
+    margin-left: 2em;
+  }
+
+  nav li:first-of-type {
+    margin-left: 0;
+  }
+
+/* Hero */
+.hero {
+  padding: 6em 0;
+  color: white;
+  text-align: center;
+  background: #49274A;
+  background: linear-gradient(#49274A 50%, #94618E);
+}
+
+  .hero h1 {
+    margin: 0.5em 0;
+    font-size: 4em;
+    font-weight: 900;
+  }
+
+/* How it works */
+.how {
+  text-align: center;
+}
+
+  .how ul {
+    margin: 3em 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: counter;
+  }
+
+  .how li {
+    flex: 1;
+    margin-bottom: 2em;
+    padding: 0 1em;
+    line-height: 1.5em;
+    text-align: center;
+  }
+
+  .how li p {
+    text-align: left;
+  }
+
+
+  .how .support {
+    font-size: 1.1em;
+  }
+
+/* Responsive */
+@media only screen and (min-width : 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .how ul {
+    display: flex;
+  }
+}

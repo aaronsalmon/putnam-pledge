@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vapid</title>
+  <%= stylesheet_link_tag "application" %>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <%= link_to "Vapid", "/", class: "vapid" %>
+
+      <ul>
+        <li><%= link_to "Admin Login", "/admin" %></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <%= yield %>
+  </main>
+</body>
+</html>

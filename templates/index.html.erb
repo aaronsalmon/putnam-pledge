@@ -1,0 +1,25 @@
+<div class="hero">
+  <div class="container">
+    <h1>Hello, <span vp-text="world"></span></h1>
+    <div vp-show="world">Nice to meet you, and congrats on getting this set up.</div>
+  </div>
+</div>
+
+<div class="how container">
+  <ul>
+    <li>
+      <h2>Develop</h2>
+      <p>Use special HTML attributes, like <code>vp-text</code> and <code>vp-richtext</code> to describe the data model. Group attributes together using <code>vp-group</code>.</p>
+    </li>
+    <li>
+      <h2>Build</h2>
+      <p>Execute <code>vapid build</code> from the command line, or through your <%= link_to "admin login", "/admin" %>, and see your data model converted into a custom control panel.</p>
+    </li>
+    <li>
+      <h2>Deploy</h2>
+      <p>Host your content on Vapid's servers using <code>vapid deploy</code>, or on a Rack-compliant server like Heroku.</p>
+    </li>
+  </ul>
+
+  <p class="support">And if you get into any trouble, <code>vapid support</code>.</p>
+</div>

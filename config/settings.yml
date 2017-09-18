@@ -1,0 +1,11 @@
+defaults: &defaults
+  debug: false
+
+development:
+  <<: *defaults
+  secret_key: 9b0d67ef5ff3caafb9660a8ca081e92c2b32e9ed3c341a0529670276223b02656853c1a007b082e9c14e7d4df7eb1d49bdc1562835bc35dfc132f530879688fd
+
+production:
+  <<: *defaults
+  install_code: 5121e5
+  secret_key: <%= ENV["SECRET_KEY"] %>
